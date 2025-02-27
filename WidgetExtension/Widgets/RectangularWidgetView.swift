@@ -29,7 +29,7 @@ struct RectangularWidgetView: View {
                 }
                 
                 VStack {
-                    Link(destination: URL(string: "githubstatswidget://user/\(entry.configuration.username ?? "bonnmh")")!) {
+                    Link(destination: URL(string: "gitstatswidget://user/\(entry.configuration.username ?? "bonnmh")")!) {
                         VStack(spacing: spacing) {
                             Spacer()
                             
