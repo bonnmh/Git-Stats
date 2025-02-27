@@ -6,17 +6,120 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D36CB29F2D6EFD6A00A29F95 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36CB29E2D6EFD6A00A29F95 /* WidgetKit.framework */; };
+		D36CB2A12D6EFD6A00A29F95 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36CB2A02D6EFD6A00A29F95 /* SwiftUI.framework */; };
+		D36CB2AE2D6EFD6B00A29F95 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D36CB29C2D6EFD6A00A29F95 /* WidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D36CB2BB2D6EFD9400A29F95 /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2B72D6EFD9400A29F95 /* WidgetExtension.swift */; };
+		D36CB2BC2D6EFD9400A29F95 /* WidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2B82D6EFD9400A29F95 /* WidgetExtensionBundle.swift */; };
+		D36CB2BD2D6EFD9400A29F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36CB2B52D6EFD9400A29F95 /* Assets.xcassets */; };
+		D36CB2CB2D6EFDAE00A29F95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36CB2C02D6EFDAE00A29F95 /* Preview Assets.xcassets */; };
+		D36CB2CC2D6EFDAE00A29F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36CB2C72D6EFDAE00A29F95 /* Assets.xcassets */; };
+		D36CB2CD2D6EFDAE00A29F95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C22D6EFDAE00A29F95 /* HomeView.swift */; };
+		D36CB2CE2D6EFDAE00A29F95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C32D6EFDAE00A29F95 /* MainView.swift */; };
+		D36CB2CF2D6EFDAE00A29F95 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C42D6EFDAE00A29F95 /* SettingsView.swift */; };
+		D36CB2D02D6EFDAE00A29F95 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C52D6EFDAE00A29F95 /* ThemeSelectionView.swift */; };
+		D36CB2D22D6EFDAE00A29F95 /* Git_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C92D6EFDAE00A29F95 /* Git_StatsApp.swift */; };
+		D36CB2D72D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2D62D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition */; };
+		D36CB2D82D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2D62D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition */; };
+		D36CB2DB2D6F053F00A29F95 /* GitStatsTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2DA2D6F053700A29F95 /* GitStatsTimelineProvider.swift */; };
+		D36CB2DD2D6F059A00A29F95 /* GitStatsUserEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2DC2D6F057B00A29F95 /* GitStatsUserEntry.swift */; };
+		D36CB2E12D6F062B00A29F95 /* ContributionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2E02D6F062300A29F95 /* ContributionFetcher.swift */; };
+		D36CB2E22D6F064400A29F95 /* ContributionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2E02D6F062300A29F95 /* ContributionFetcher.swift */; };
+		D36CB2E42D6F074000A29F95 /* WidgetViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2E32D6F073900A29F95 /* WidgetViewHelpers.swift */; };
+		D36CB2E52D6F074000A29F95 /* WidgetViewHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2E32D6F073900A29F95 /* WidgetViewHelpers.swift */; };
+		D36CB2E72D6F07F500A29F95 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2E62D6F07EE00A29F95 /* NotificationManager.swift */; };
+		D36CB2E92D6F08FA00A29F95 /* GithubAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2E82D6F08F200A29F95 /* GithubAPIManager.swift */; };
+		D36CB3142D6F5C2A00A29F95 /* GitStatsTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2DA2D6F053700A29F95 /* GitStatsTimelineProvider.swift */; };
+		D36CB3152D6F5C2E00A29F95 /* GitStatsUserEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2DC2D6F057B00A29F95 /* GitStatsUserEntry.swift */; };
+		D36CB3162D6F5C3100A29F95 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2E62D6F07EE00A29F95 /* NotificationManager.swift */; };
+		D36CB3172D6F5C3600A29F95 /* GithubAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2E82D6F08F200A29F95 /* GithubAPIManager.swift */; };
+		D36CB3192D6F5C7C00A29F95 /* GitStatsWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB3182D6F5C7500A29F95 /* GitStatsWidgetView.swift */; };
+		D36CB31C2D6F5D4500A29F95 /* SmallWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB31B2D6F5D4100A29F95 /* SmallWidgetView.swift */; };
+		D36CB31F2D6F610A00A29F95 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB31E2D6F610600A29F95 /* UserInfoView.swift */; };
+		D36CB3212D6F61C700A29F95 /* UserAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB3202D6F61C100A29F95 /* UserAvatarView.swift */; };
+		D36CB3232D6F68D000A29F95 /* StatsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB3222D6F68CE00A29F95 /* StatsInfoView.swift */; };
+		D36CB3252D6F6D6300A29F95 /* CountTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB3242D6F6D6200A29F95 /* CountTextView.swift */; };
+		D36CB3272D6F6DC800A29F95 /* DateInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB3262D6F6DC600A29F95 /* DateInfoView.swift */; };
+		D36CB3292D6F6DDD00A29F95 /* IconAndTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB3282D6F6DD700A29F95 /* IconAndTextView.swift */; };
+		D36CB32B2D6F732200A29F95 /* MediumWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB32A2D6F731E00A29F95 /* MediumWidgetView.swift */; };
+		D36CB32D2D6F749B00A29F95 /* ContributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB32C2D6F749A00A29F95 /* ContributionsView.swift */; };
+		D36CB32F2D6F7A2900A29F95 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB32E2D6F7A2800A29F95 /* ColorTheme.swift */; };
+		D36CB3302D6F7A2900A29F95 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB32E2D6F7A2800A29F95 /* ColorTheme.swift */; };
+		D3ECCEAF2D7057EE007524FB /* LargeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEAE2D7057E5007524FB /* LargeWidgetView.swift */; };
+		D3ECCEB32D706083007524FB /* GitStatsContributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB22D706082007524FB /* GitStatsContributionsView.swift */; };
+		D3ECCEB52D70630B007524FB /* SmallWidgetWithContributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB42D706304007524FB /* SmallWidgetWithContributionsView.swift */; };
+		D3ECCEB72D706706007524FB /* GitStatsLockscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB62D706705007524FB /* GitStatsLockscreenView.swift */; };
+		D3ECCEB92D706784007524FB /* RectangularWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB82D70677B007524FB /* RectangularWidgetView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D36CB2AC2D6EFD6B00A29F95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D36CB26E2D6EEFF900A29F95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D36CB29B2D6EFD6A00A29F95;
+			remoteInfo = WidgetExtensionExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D36CB2B32D6EFD6B00A29F95 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D36CB2AE2D6EFD6B00A29F95 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D36CB2762D6EEFF900A29F95 /* Git Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D36CB29C2D6EFD6A00A29F95 /* WidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D36CB29E2D6EFD6A00A29F95 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D36CB2A02D6EFD6A00A29F95 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D36CB2B52D6EFD9400A29F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D36CB2B62D6EFD9400A29F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D36CB2B72D6EFD9400A29F95 /* WidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtension.swift; sourceTree = "<group>"; };
+		D36CB2B82D6EFD9400A29F95 /* WidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtensionBundle.swift; sourceTree = "<group>"; };
+		D36CB2C02D6EFDAE00A29F95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D36CB2C22D6EFDAE00A29F95 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D36CB2C32D6EFDAE00A29F95 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D36CB2C42D6EFDAE00A29F95 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D36CB2C52D6EFDAE00A29F95 /* ThemeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSelectionView.swift; sourceTree = "<group>"; };
+		D36CB2C72D6EFDAE00A29F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D36CB2C92D6EFDAE00A29F95 /* Git_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git_StatsApp.swift; sourceTree = "<group>"; };
+		D36CB2D32D6EFDE000A29F95 /* WidgetExtensionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtensionExtension.entitlements; sourceTree = "<group>"; };
+		D36CB2D42D6EFE2D00A29F95 /* Git Stats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Git Stats.entitlements"; sourceTree = "<group>"; };
+		D36CB2D62D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = GitStatsConfigurationIntent.intentdefinition; sourceTree = "<group>"; };
+		D36CB2D92D6F007300A29F95 /* Git-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Git-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
+		D36CB2DA2D6F053700A29F95 /* GitStatsTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStatsTimelineProvider.swift; sourceTree = "<group>"; };
+		D36CB2DC2D6F057B00A29F95 /* GitStatsUserEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStatsUserEntry.swift; sourceTree = "<group>"; };
+		D36CB2E02D6F062300A29F95 /* ContributionFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionFetcher.swift; sourceTree = "<group>"; };
+		D36CB2E32D6F073900A29F95 /* WidgetViewHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewHelpers.swift; sourceTree = "<group>"; };
+		D36CB2E62D6F07EE00A29F95 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		D36CB2E82D6F08F200A29F95 /* GithubAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIManager.swift; sourceTree = "<group>"; };
+		D36CB3182D6F5C7500A29F95 /* GitStatsWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStatsWidgetView.swift; sourceTree = "<group>"; };
+		D36CB31B2D6F5D4100A29F95 /* SmallWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetView.swift; sourceTree = "<group>"; };
+		D36CB31E2D6F610600A29F95 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		D36CB3202D6F61C100A29F95 /* UserAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarView.swift; sourceTree = "<group>"; };
+		D36CB3222D6F68CE00A29F95 /* StatsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsInfoView.swift; sourceTree = "<group>"; };
+		D36CB3242D6F6D6200A29F95 /* CountTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountTextView.swift; sourceTree = "<group>"; };
+		D36CB3262D6F6DC600A29F95 /* DateInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInfoView.swift; sourceTree = "<group>"; };
+		D36CB3282D6F6DD700A29F95 /* IconAndTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconAndTextView.swift; sourceTree = "<group>"; };
+		D36CB32A2D6F731E00A29F95 /* MediumWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumWidgetView.swift; sourceTree = "<group>"; };
+		D36CB32C2D6F749A00A29F95 /* ContributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsView.swift; sourceTree = "<group>"; };
+		D36CB32E2D6F7A2800A29F95 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		D3ECCEAE2D7057E5007524FB /* LargeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeWidgetView.swift; sourceTree = "<group>"; };
+		D3ECCEB22D706082007524FB /* GitStatsContributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStatsContributionsView.swift; sourceTree = "<group>"; };
+		D3ECCEB42D706304007524FB /* SmallWidgetWithContributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetWithContributionsView.swift; sourceTree = "<group>"; };
+		D3ECCEB62D706705007524FB /* GitStatsLockscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStatsLockscreenView.swift; sourceTree = "<group>"; };
+		D3ECCEB82D70677B007524FB /* RectangularWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularWidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		D36CB2782D6EEFF900A29F95 /* Git Stats */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Git Stats";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D36CB2732D6EEFF900A29F95 /* Frameworks */ = {
@@ -26,13 +129,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D36CB2992D6EFD6A00A29F95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36CB2A12D6EFD6A00A29F95 /* SwiftUI.framework in Frameworks */,
+				D36CB29F2D6EFD6A00A29F95 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D36CB26D2D6EEFF900A29F95 = {
 			isa = PBXGroup;
 			children = (
-				D36CB2782D6EEFF900A29F95 /* Git Stats */,
+				D36CB2D32D6EFDE000A29F95 /* WidgetExtensionExtension.entitlements */,
+				D36CB2CA2D6EFDAE00A29F95 /* Git Stats */,
+				D36CB2B92D6EFD9400A29F95 /* WidgetExtension */,
+				D36CB29D2D6EFD6A00A29F95 /* Frameworks */,
 				D36CB2772D6EEFF900A29F95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +156,116 @@
 			isa = PBXGroup;
 			children = (
 				D36CB2762D6EEFF900A29F95 /* Git Stats.app */,
+				D36CB29C2D6EFD6A00A29F95 /* WidgetExtensionExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D36CB29D2D6EFD6A00A29F95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D36CB29E2D6EFD6A00A29F95 /* WidgetKit.framework */,
+				D36CB2A02D6EFD6A00A29F95 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D36CB2B92D6EFD9400A29F95 /* WidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D36CB2B82D6EFD9400A29F95 /* WidgetExtensionBundle.swift */,
+				D36CB2B72D6EFD9400A29F95 /* WidgetExtension.swift */,
+				D36CB3182D6F5C7500A29F95 /* GitStatsWidgetView.swift */,
+				D3ECCEB22D706082007524FB /* GitStatsContributionsView.swift */,
+				D3ECCEB62D706705007524FB /* GitStatsLockscreenView.swift */,
+				D36CB31A2D6F5D2F00A29F95 /* Widgets */,
+				D36CB2B52D6EFD9400A29F95 /* Assets.xcassets */,
+				D36CB31D2D6F610100A29F95 /* SubViews */,
+				D36CB2B62D6EFD9400A29F95 /* Info.plist */,
+				D36CB2DF2D6F062000A29F95 /* Helpers */,
+			);
+			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
+		D36CB2BF2D6EFDAE00A29F95 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D36CB2E82D6F08F200A29F95 /* GithubAPIManager.swift */,
+				D36CB2DA2D6F053700A29F95 /* GitStatsTimelineProvider.swift */,
+				D36CB2DC2D6F057B00A29F95 /* GitStatsUserEntry.swift */,
+				D36CB2E62D6F07EE00A29F95 /* NotificationManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D36CB2C12D6EFDAE00A29F95 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D36CB2C02D6EFDAE00A29F95 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D36CB2C62D6EFDAE00A29F95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D36CB2C22D6EFDAE00A29F95 /* HomeView.swift */,
+				D36CB2C32D6EFDAE00A29F95 /* MainView.swift */,
+				D36CB2C42D6EFDAE00A29F95 /* SettingsView.swift */,
+				D36CB2C52D6EFDAE00A29F95 /* ThemeSelectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D36CB2CA2D6EFDAE00A29F95 /* Git Stats */ = {
+			isa = PBXGroup;
+			children = (
+				D36CB2D92D6F007300A29F95 /* Git-Stats-Info.plist */,
+				D36CB2D42D6EFE2D00A29F95 /* Git Stats.entitlements */,
+				D36CB2C72D6EFDAE00A29F95 /* Assets.xcassets */,
+				D36CB2C92D6EFDAE00A29F95 /* Git_StatsApp.swift */,
+				D36CB2D62D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition */,
+				D36CB2BF2D6EFDAE00A29F95 /* Helpers */,
+				D36CB2C12D6EFDAE00A29F95 /* Preview Content */,
+				D36CB2C62D6EFDAE00A29F95 /* Views */,
+			);
+			path = "Git Stats";
+			sourceTree = "<group>";
+		};
+		D36CB2DF2D6F062000A29F95 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D36CB2E02D6F062300A29F95 /* ContributionFetcher.swift */,
+				D36CB2E32D6F073900A29F95 /* WidgetViewHelpers.swift */,
+				D36CB32E2D6F7A2800A29F95 /* ColorTheme.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D36CB31A2D6F5D2F00A29F95 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				D36CB31B2D6F5D4100A29F95 /* SmallWidgetView.swift */,
+				D36CB32A2D6F731E00A29F95 /* MediumWidgetView.swift */,
+				D3ECCEAE2D7057E5007524FB /* LargeWidgetView.swift */,
+				D3ECCEB42D706304007524FB /* SmallWidgetWithContributionsView.swift */,
+				D3ECCEB82D70677B007524FB /* RectangularWidgetView.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		D36CB31D2D6F610100A29F95 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				D36CB31E2D6F610600A29F95 /* UserInfoView.swift */,
+				D36CB3202D6F61C100A29F95 /* UserAvatarView.swift */,
+				D36CB3222D6F68CE00A29F95 /* StatsInfoView.swift */,
+				D36CB3282D6F6DD700A29F95 /* IconAndTextView.swift */,
+				D36CB32C2D6F749A00A29F95 /* ContributionsView.swift */,
+				D36CB3242D6F6D6200A29F95 /* CountTextView.swift */,
+				D36CB3262D6F6DC600A29F95 /* DateInfoView.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,13 +278,12 @@
 				D36CB2722D6EEFF900A29F95 /* Sources */,
 				D36CB2732D6EEFF900A29F95 /* Frameworks */,
 				D36CB2742D6EEFF900A29F95 /* Resources */,
+				D36CB2B32D6EFD6B00A29F95 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				D36CB2782D6EEFF900A29F95 /* Git Stats */,
+				D36CB2AD2D6EFD6B00A29F95 /* PBXTargetDependency */,
 			);
 			name = "Git Stats";
 			packageProductDependencies = (
@@ -69,6 +291,25 @@
 			productName = "Git Stats";
 			productReference = D36CB2762D6EEFF900A29F95 /* Git Stats.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D36CB29B2D6EFD6A00A29F95 /* WidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D36CB2B02D6EFD6B00A29F95 /* Build configuration list for PBXNativeTarget "WidgetExtensionExtension" */;
+			buildPhases = (
+				D36CB2982D6EFD6A00A29F95 /* Sources */,
+				D36CB2992D6EFD6A00A29F95 /* Frameworks */,
+				D36CB29A2D6EFD6A00A29F95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetExtensionExtension;
+			packageProductDependencies = (
+			);
+			productName = WidgetExtensionExtension;
+			productReference = D36CB29C2D6EFD6A00A29F95 /* WidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +322,9 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					D36CB2752D6EEFF900A29F95 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D36CB29B2D6EFD6A00A29F95 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -100,6 +344,7 @@
 			projectRoot = "";
 			targets = (
 				D36CB2752D6EEFF900A29F95 /* Git Stats */,
+				D36CB29B2D6EFD6A00A29F95 /* WidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -109,6 +354,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36CB2CB2D6EFDAE00A29F95 /* Preview Assets.xcassets in Resources */,
+				D36CB2CC2D6EFDAE00A29F95 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D36CB29A2D6EFD6A00A29F95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36CB2BD2D6EFD9400A29F95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,10 +374,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D36CB2CD2D6EFDAE00A29F95 /* HomeView.swift in Sources */,
+				D36CB2CE2D6EFDAE00A29F95 /* MainView.swift in Sources */,
+				D36CB2DB2D6F053F00A29F95 /* GitStatsTimelineProvider.swift in Sources */,
+				D36CB2CF2D6EFDAE00A29F95 /* SettingsView.swift in Sources */,
+				D36CB2E72D6F07F500A29F95 /* NotificationManager.swift in Sources */,
+				D36CB32F2D6F7A2900A29F95 /* ColorTheme.swift in Sources */,
+				D36CB2D02D6EFDAE00A29F95 /* ThemeSelectionView.swift in Sources */,
+				D36CB2E22D6F064400A29F95 /* ContributionFetcher.swift in Sources */,
+				D36CB2D72D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition in Sources */,
+				D36CB2DD2D6F059A00A29F95 /* GitStatsUserEntry.swift in Sources */,
+				D36CB2E92D6F08FA00A29F95 /* GithubAPIManager.swift in Sources */,
+				D36CB2E52D6F074000A29F95 /* WidgetViewHelpers.swift in Sources */,
+				D36CB2D22D6EFDAE00A29F95 /* Git_StatsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D36CB2982D6EFD6A00A29F95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36CB2E42D6F074000A29F95 /* WidgetViewHelpers.swift in Sources */,
+				D36CB3302D6F7A2900A29F95 /* ColorTheme.swift in Sources */,
+				D36CB3142D6F5C2A00A29F95 /* GitStatsTimelineProvider.swift in Sources */,
+				D36CB3272D6F6DC800A29F95 /* DateInfoView.swift in Sources */,
+				D36CB3292D6F6DDD00A29F95 /* IconAndTextView.swift in Sources */,
+				D36CB3232D6F68D000A29F95 /* StatsInfoView.swift in Sources */,
+				D3ECCEB92D706784007524FB /* RectangularWidgetView.swift in Sources */,
+				D36CB3162D6F5C3100A29F95 /* NotificationManager.swift in Sources */,
+				D36CB2BB2D6EFD9400A29F95 /* WidgetExtension.swift in Sources */,
+				D36CB32D2D6F749B00A29F95 /* ContributionsView.swift in Sources */,
+				D3ECCEB32D706083007524FB /* GitStatsContributionsView.swift in Sources */,
+				D36CB31F2D6F610A00A29F95 /* UserInfoView.swift in Sources */,
+				D3ECCEAF2D7057EE007524FB /* LargeWidgetView.swift in Sources */,
+				D36CB2D82D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition in Sources */,
+				D36CB32B2D6F732200A29F95 /* MediumWidgetView.swift in Sources */,
+				D3ECCEB72D706706007524FB /* GitStatsLockscreenView.swift in Sources */,
+				D36CB2BC2D6EFD9400A29F95 /* WidgetExtensionBundle.swift in Sources */,
+				D36CB31C2D6F5D4500A29F95 /* SmallWidgetView.swift in Sources */,
+				D36CB3172D6F5C3600A29F95 /* GithubAPIManager.swift in Sources */,
+				D36CB3152D6F5C2E00A29F95 /* GitStatsUserEntry.swift in Sources */,
+				D36CB2E12D6F062B00A29F95 /* ContributionFetcher.swift in Sources */,
+				D36CB3192D6F5C7C00A29F95 /* GitStatsWidgetView.swift in Sources */,
+				D36CB3212D6F61C700A29F95 /* UserAvatarView.swift in Sources */,
+				D36CB3252D6F6D6300A29F95 /* CountTextView.swift in Sources */,
+				D3ECCEB52D70630B007524FB /* SmallWidgetWithContributionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D36CB2AD2D6EFD6B00A29F95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D36CB29B2D6EFD6A00A29F95 /* WidgetExtensionExtension */;
+			targetProxy = D36CB2AC2D6EFD6B00A29F95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D36CB2822D6EEFFA00A29F95 /* Debug */ = {
@@ -249,12 +557,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Git Stats/Git Stats.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Git Stats/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A28NG66QV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Git-Stats-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -265,7 +575,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blife.gitstats.Git-Stats";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blife.gitstats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -278,12 +588,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Git Stats/Git Stats.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Git Stats/Preview Content\"";
 				DEVELOPMENT_TEAM = 4A28NG66QV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Git-Stats-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,8 +606,64 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.blife.gitstats.Git-Stats";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blife.gitstats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D36CB2B12D6EFD6B00A29F95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4A28NG66QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blife.gitstats.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D36CB2B22D6EFD6B00A29F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetExtensionExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4A28NG66QV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blife.gitstats.WidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,6 +687,15 @@
 			buildConfigurations = (
 				D36CB2852D6EEFFA00A29F95 /* Debug */,
 				D36CB2862D6EEFFA00A29F95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D36CB2B02D6EFD6B00A29F95 /* Build configuration list for PBXNativeTarget "WidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D36CB2B12D6EFD6B00A29F95 /* Debug */,
+				D36CB2B22D6EFD6B00A29F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,12 +9,18 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @Environment(\.colorScheme) var colorScheme
     
     let containerIconSize: CGFloat = 32
     let iconSize: CGFloat = 12
     let containerIconColorIndex: Int = 3
     
+    @AppStorage("shouldRedirectToGithub") private var shouldRedirectToGithub: Bool = false
+    @AppStorage("notifyOnStatsChange") private var notifyOnStatsChange: Bool = false
+    
     var body: some View {
+        let linkColor = colorScheme == .dark ? Color.white : Color.black
+        
         NavigationStack {
             List {
                 Section(header: Text("")) {
@@ -36,12 +42,18 @@ struct SettingsView: View {
                     }
 
                     
-                    Toggle("Redirect to Github", isOn: .constant(true))
+                    Toggle("Redirect to Github", isOn: $shouldRedirectToGithub)
                         .toggleStyle(SwitchToggleStyle())
+                        .onChange(of: shouldRedirectToGithub) { oldValue, newValue in
+                            
+                        }
                     
                     
-                    Toggle("Notify on stats change", isOn: .constant(true))
+                    Toggle("Notify on stats change", isOn: $notifyOnStatsChange)
                         .toggleStyle(SwitchToggleStyle())
+                        .onChange(of: notifyOnStatsChange) { oldValue, newValue in
+                            
+                        }
                     
                 }
                 
@@ -49,7 +61,7 @@ struct SettingsView: View {
                     Link(destination: URL(string: "http://")!) {
                         Label {
                             Text("Rate App")
-                                .foregroundColor(Color.red)
+                                .foregroundColor(linkColor)
                         } icon: {
                             Image(systemName: "star")
                                 .font(.system(size: iconSize))
@@ -65,7 +77,7 @@ struct SettingsView: View {
                     Link(destination: URL(string: "http://")!) {
                         Label {
                             Text("Contact")
-                                .foregroundColor(Color.red)
+                                .foregroundColor(linkColor)
                         } icon: {
                             Image(systemName: "text.bubble")
                                 .font(.system(size: iconSize))
@@ -81,7 +93,7 @@ struct SettingsView: View {
                     Link(destination: URL(string: "http://")!) {
                         Label {
                             Text("Github Repo")
-                                .foregroundColor(Color.red)
+                                .foregroundColor(linkColor)
                         } icon: {
                             Image(systemName: "backpack")
                                 .font(.system(size: iconSize))
