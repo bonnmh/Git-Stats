@@ -11,7 +11,7 @@ import SwiftUI
 struct Git_StatsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Mainview()
         }
     }
 }
