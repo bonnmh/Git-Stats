@@ -40,21 +40,21 @@ let sampleContributions: [Contribution] = (0..<sampleDays).map { day in
 struct GitHubStatsWidgetView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-//            GitStatsWidgetView(
-//                entry: GitStatsUserEntry(
-//                    date: Date(),
-//                    username: "bonnmh",
-//                    followers: 2,
-//                    stars: 17,
-//                    avatarImageData: nil,
-//                    configuration: GitStatsUserConfigurationIntent(),
-//                    previousFollowers: 0,
-//                    previousStars: 0,
-//                    contributions: sampleContributions
-//                )
-//            )
-//            .previewContext(WidgetPreviewContext(family: .systemSmall))
-//            .previewDisplayName("Small Widget")
+            GitStatsWidgetView(
+                entry: GitStatsUserEntry(
+                    date: Date(),
+                    username: "bonnmh",
+                    followers: 2,
+                    stars: 17,
+                    avatarImageData: nil,
+                    configuration: GitStatsUserConfigurationIntent(),
+                    previousFollowers: 0,
+                    previousStars: 0,
+                    contributions: sampleContributions
+                )
+            )
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewDisplayName("Small Widget")
             
 //            GitStatsWidgetView(
 //                entry: GitStatsUserEntry(
@@ -72,21 +72,21 @@ struct GitHubStatsWidgetView_Previews: PreviewProvider {
 //            .previewContext(WidgetPreviewContext(family: .systemMedium))
 //            .previewDisplayName("Medium Widget")
             
-            GitStatsWidgetView(
-                entry: GitStatsUserEntry(
-                    date: Date(),
-                    username: "bonnmh",
-                    followers: 2,
-                    stars: 17,
-                    avatarImageData: nil,
-                    configuration: GitStatsUserConfigurationIntent(),
-                    previousFollowers: 0,
-                    previousStars: 0,
-                    contributions: sampleContributions
-                )
-            )
-            .previewContext(WidgetPreviewContext(family: .systemLarge))
-            .previewDisplayName("Large Widget")
+//            GitStatsWidgetView(
+//                entry: GitStatsUserEntry(
+//                    date: Date(),
+//                    username: "bonnmh",
+//                    followers: 2,
+//                    stars: 17,
+//                    avatarImageData: nil,
+//                    configuration: GitStatsUserConfigurationIntent(),
+//                    previousFollowers: 0,
+//                    previousStars: 0,
+//                    contributions: sampleContributions
+//                )
+//            )
+//            .previewContext(WidgetPreviewContext(family: .systemLarge))
+//            .previewDisplayName("Large Widget")
         }
     }
 }

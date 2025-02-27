@@ -12,7 +12,6 @@
 		D36CB2AE2D6EFD6B00A29F95 /* WidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D36CB29C2D6EFD6A00A29F95 /* WidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D36CB2BB2D6EFD9400A29F95 /* WidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2B72D6EFD9400A29F95 /* WidgetExtension.swift */; };
 		D36CB2BC2D6EFD9400A29F95 /* WidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2B82D6EFD9400A29F95 /* WidgetExtensionBundle.swift */; };
-		D36CB2BD2D6EFD9400A29F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36CB2B52D6EFD9400A29F95 /* Assets.xcassets */; };
 		D36CB2CB2D6EFDAE00A29F95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36CB2C02D6EFDAE00A29F95 /* Preview Assets.xcassets */; };
 		D36CB2CC2D6EFDAE00A29F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36CB2C72D6EFDAE00A29F95 /* Assets.xcassets */; };
 		D36CB2CD2D6EFDAE00A29F95 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C22D6EFDAE00A29F95 /* HomeView.swift */; };
@@ -51,6 +50,7 @@
 		D3ECCEB52D70630B007524FB /* SmallWidgetWithContributionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB42D706304007524FB /* SmallWidgetWithContributionsView.swift */; };
 		D3ECCEB72D706706007524FB /* GitStatsLockscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB62D706705007524FB /* GitStatsLockscreenView.swift */; };
 		D3ECCEB92D706784007524FB /* RectangularWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB82D70677B007524FB /* RectangularWidgetView.swift */; };
+		D3ECCEBC2D707907007524FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ECCEBB2D707907007524FB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +82,6 @@
 		D36CB29C2D6EFD6A00A29F95 /* WidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36CB29E2D6EFD6A00A29F95 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		D36CB2A02D6EFD6A00A29F95 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		D36CB2B52D6EFD9400A29F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D36CB2B62D6EFD9400A29F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D36CB2B72D6EFD9400A29F95 /* WidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtension.swift; sourceTree = "<group>"; };
 		D36CB2B82D6EFD9400A29F95 /* WidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetExtensionBundle.swift; sourceTree = "<group>"; };
@@ -119,6 +118,7 @@
 		D3ECCEB42D706304007524FB /* SmallWidgetWithContributionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWidgetWithContributionsView.swift; sourceTree = "<group>"; };
 		D3ECCEB62D706705007524FB /* GitStatsLockscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStatsLockscreenView.swift; sourceTree = "<group>"; };
 		D3ECCEB82D70677B007524FB /* RectangularWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularWidgetView.swift; sourceTree = "<group>"; };
+		D3ECCEBB2D707907007524FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +178,8 @@
 				D36CB3182D6F5C7500A29F95 /* GitStatsWidgetView.swift */,
 				D3ECCEB22D706082007524FB /* GitStatsContributionsView.swift */,
 				D3ECCEB62D706705007524FB /* GitStatsLockscreenView.swift */,
+				D3ECCEBB2D707907007524FB /* Assets.xcassets */,
 				D36CB31A2D6F5D2F00A29F95 /* Widgets */,
-				D36CB2B52D6EFD9400A29F95 /* Assets.xcassets */,
 				D36CB31D2D6F610100A29F95 /* SubViews */,
 				D36CB2B62D6EFD9400A29F95 /* Info.plist */,
 				D36CB2DF2D6F062000A29F95 /* Helpers */,
@@ -363,7 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36CB2BD2D6EFD9400A29F95 /* Assets.xcassets in Resources */,
+				D3ECCEBC2D707907007524FB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

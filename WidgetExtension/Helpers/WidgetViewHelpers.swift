@@ -38,7 +38,7 @@ extension String {
 
 extension UserDefaults {
     static var shared: UserDefaults? {
-        return UserDefaults(suiteName: "group.com.martinpluisch.githubstatswidget")
+        return UserDefaults(suiteName: "group.blife.gitstatswidget")
     }
 
     static func setColorDict(_ value: [Int: Color], forKey key: String) {
