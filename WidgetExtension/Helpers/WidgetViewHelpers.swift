@@ -97,6 +97,7 @@ extension UserDefaults {
     static func setFollowers(followers: [String], forUsername username: String) {
         let defaults = UserDefaults.standard
         defaults.set(followers, forKey: "followers_\(username)")
+        WidgetCenter.shared.reloadAllTimelines()
     }
 
     static func getFollowers(forUsername username: String) -> [String] {

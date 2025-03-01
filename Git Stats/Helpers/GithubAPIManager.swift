@@ -50,17 +50,20 @@ class GithubAPIManager {
     }
     
     func fetchFollowers(username: String, completion: @escaping (Result<[String], Error>) -> Void) {
-        let urlString = "https://api.github.com/users/\(username)/followers"
+        // let timestamp = Date().timeIntervalSinceNow
+        // let urlString = "https://api.github.com/users/\(username)/followers?timestamp=\(timestamp)"
+       let urlString = "https://api.github.com/users/\(username)/followers"
         guard let url = URL(string: urlString) else { return completion(.failure(URLError(.badURL)))}
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
+          
             if let error = error {
                 completion(.failure(error))
                 return
             }
             
             guard let data = data else { return completion(.failure(URLError(.cannotParseResponse))) }
-            
+            // print("----data: \(data)")
             do {
                 let followersArray = try JSONDecoder().decode([GitHubFollower].self, from: data)
                 let followers = followersArray.map { $0.login }

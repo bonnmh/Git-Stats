@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Mainview: View {
+    @AppStorage("shouldRedirectToGitHub") var shouldRedirectToGitHub: Bool = false
     
     var body: some View {
         TabView {
@@ -16,6 +17,14 @@ struct Mainview: View {
             }
             Tab("Sent", systemImage: "gear") {
                 SettingsView()
+            }
+        }
+        .onOpenURL { url in
+            if shouldRedirectToGitHub,
+               url.scheme == "gitstatswidget",
+               let username = url.pathComponents.last {
+                let userURL = URL(string: "https://github.com/\(username)")!
+                UIApplication.shared.open(userURL)
             }
         }
     }
