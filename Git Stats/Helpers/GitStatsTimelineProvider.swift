@@ -33,7 +33,9 @@ struct GitStatsTimelineProvider: IntentTimelineProvider {
     }
 
     private func fetchAndUpdateStats(username: String, configuration: GitStatsUserConfigurationIntent, completion: @escaping (Timeline<GitStatsUserEntry>) -> Void) {
+        // print("[DEBUG] start fetchAndUpdateStats")
         GithubAPIManager.shared.fetchGitHubUserStats(username: username) { statsResult in
+            // print("[DEBUG] fetchAndUpdateStats statsResult: \(statsResult)")
             switch statsResult {
             case .success(let (user, repositories)):
                 // fetch latest contributions
@@ -45,12 +47,24 @@ struct GitStatsTimelineProvider: IntentTimelineProvider {
                                 switch followersResult {
                                 case .success(let currentFollowers):
                                     let previousFollowers = UserDefaults.getFollowers(forUsername: username)
-                                    if !previousFollowers.isEmpty {
-                                        let newFollowers = currentFollowers.filter { !previousFollowers.contains($0) }
-                                        newFollowers.forEach { follower in
-                                            NotificationManager.scheduleNotification(title: "GitHub Stats - @\(username)", body: "\(follower) is now following \(username)")
-                                        }
+
+                                    let newFollowers = currentFollowers.filter { !previousFollowers.contains($0) }
+                                    let lostFollowers = previousFollowers.filter { !currentFollowers.contains($0) }
+
+                                    newFollowers.forEach { follower in
+                                        NotificationManager.scheduleNotification(
+                                            title: "GitHub Stats - @\(username)",
+                                            body: "\(follower) is now following \(username)"
+                                        )
                                     }
+
+                                    if !lostFollowers.isEmpty {
+                                        NotificationManager.scheduleNotification(
+                                            title: "GitHub Stats - @\(username)",
+                                            body: "\(lostFollowers.count) followers unfollowed you"
+                                        )
+                                    }
+                                    
                                     UserDefaults.setFollowers(followers: currentFollowers, forUsername: username)
                                 case .failure(let error):
                                     print("Error fetching followers: \(error)")

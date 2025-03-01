@@ -17,8 +17,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D36CB29B2D6EFD6A00A29F95"
-               BuildableName = "WidgetExtensionExtension.appex"
-               BlueprintName = "WidgetExtensionExtension"
+               BuildableName = "WidgetExtension.appex"
+               BlueprintName = "WidgetExtension"
                ReferencedContainer = "container:Git Stats.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D36CB29B2D6EFD6A00A29F95"
-            BuildableName = "WidgetExtensionExtension.appex"
-            BlueprintName = "WidgetExtensionExtension"
+            BuildableName = "WidgetExtension.appex"
+            BlueprintName = "WidgetExtension"
             ReferencedContainer = "container:Git Stats.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
