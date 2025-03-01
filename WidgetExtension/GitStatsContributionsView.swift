@@ -17,8 +17,11 @@ struct GitStatsContributionsView: View {
     var body: some View {
         Group {
             SmallWidgetWithContributionsView(entry: entry, colorScheme: colorScheme)
-        }
-        .containerBackground(Color.white, for: .widget)
+        } 
+        .containerBackground(
+            Color("WidgetBackground").gradient,
+            for: .widget
+        )
     }
 }
  

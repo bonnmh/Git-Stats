@@ -16,7 +16,7 @@ struct StatsInfoView: View {
             VStack {
                 if entry.configuration.useIcons as? Bool ?? true {
                     Spacer()
-                    IconAndTextView(type: "person.3", currentCount: entry.followers, previousCount: entry.previousFollowers)
+                    IconAndTextView(type:entry.followers > 1 ? "person.2" : "person", currentCount: entry.followers, previousCount: entry.previousFollowers)
                         .foregroundColor(.primary)
                     Spacer()
                     Divider()

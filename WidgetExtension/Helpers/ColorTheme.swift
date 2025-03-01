@@ -61,13 +61,7 @@ struct ColorTheme {
         ])
     ]
     
-    static let defaults: [Int: Color] = [
-        0: .gray.opacity(0.15),
-        1: Color(red: 0x0a / 255, green: 0x30 / 255, blue: 0x69 / 255),
-        2: Color(red: 0x09 / 255, green: 0x69 / 255, blue: 0xda / 255),
-        3: Color(red: 0x54 / 255, green: 0xae / 255, blue: 0xff / 255),
-        4: Color(red: 0xb6 / 255, green: 0xe3 / 255, blue: 0xff / 255),
-    ]
+    static let defaults: [Int: Color] = themes[0].colors
     
     static var currentTheme: ColorTheme {
         let userColors = UserDefaults.colorDict(forKey: "widgetColors")
