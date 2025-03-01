@@ -36,7 +36,7 @@ struct RectangularWidgetView: View {
                             HStack{
                                 Spacer()
                                 
-                                Image(systemName: "person.3.fill")
+                                Image(systemName: entry.followers > 1 ? "person.2.fill" : "person.fill")
                                     .scaledToFit()
                                     .frame(width: iconSize, height: iconSize)
                                 CountTextView(prefix: "", currentCount: entry.followers, previousCount: entry.previousFollowers)

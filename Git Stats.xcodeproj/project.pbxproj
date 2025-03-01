@@ -51,6 +51,7 @@
 		D3ECCEB72D706706007524FB /* GitStatsLockscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB62D706705007524FB /* GitStatsLockscreenView.swift */; };
 		D3ECCEB92D706784007524FB /* RectangularWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB82D70677B007524FB /* RectangularWidgetView.swift */; };
 		D3ECCEBC2D707907007524FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ECCEBB2D707907007524FB /* Assets.xcassets */; };
+		D3ECCEBD2D716FE2007524FB /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C52D6EFDAE00A29F95 /* ThemeSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -417,6 +418,7 @@
 				D36CB2E12D6F062B00A29F95 /* ContributionFetcher.swift in Sources */,
 				D36CB3192D6F5C7C00A29F95 /* GitStatsWidgetView.swift in Sources */,
 				D36CB3212D6F61C700A29F95 /* UserAvatarView.swift in Sources */,
+				D3ECCEBD2D716FE2007524FB /* ThemeSelectionView.swift in Sources */,
 				D36CB3252D6F6D6300A29F95 /* CountTextView.swift in Sources */,
 				D3ECCEB52D70630B007524FB /* SmallWidgetWithContributionsView.swift in Sources */,
 			);

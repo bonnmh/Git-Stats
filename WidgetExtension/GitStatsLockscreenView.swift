@@ -23,8 +23,11 @@ struct GitStatsLockscreenView: View {
             default:
                 Text("Unsupported widget family")
             }
-        }
-        .containerBackground(Color.white, for: .widget)
+        } 
+        .containerBackground(
+            Color("WidgetBackground").gradient,
+            for: .widget
+        )
     }
 }
 

@@ -25,7 +25,10 @@ struct GitStatsWidgetView: View {
                 SmallWidgetView(entry: entry, colorScheme: colorScheme)
             }
         }
-        .containerBackground(Color.white, for: .widget)
+        .containerBackground(
+            Color("WidgetBackground").gradient,
+            for: .widget
+        )
     }
 }
 
@@ -55,6 +58,7 @@ struct GitHubStatsWidgetView_Previews: PreviewProvider {
             )
             .previewContext(WidgetPreviewContext(family: .systemSmall))
             .previewDisplayName("Small Widget")
+             
             
 //            GitStatsWidgetView(
 //                entry: GitStatsUserEntry(

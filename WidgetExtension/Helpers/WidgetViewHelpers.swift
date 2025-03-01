@@ -63,6 +63,10 @@ extension UserDefaults {
     static func setShouldRedirectToGitHub(_ value: Bool) {
         UserDefaults.shared?.set(value, forKey: "shouldRedirectToGitHub")
     }
+    
+    static func setNotifyOnStatsChange(_ value: Bool) {
+        UserDefaults.shared?.set(value,forKey: "notifyOnStatsChange")
+    }
 
     static func shouldRedirectToGitHub() -> Bool {
         return UserDefaults.shared?.bool(forKey: "shouldRedirectToGitHub") ?? false
@@ -149,3 +153,4 @@ extension Date {
         return calendar.isDate(self, inSameDayAs: otherDate)
     }
 }
+
