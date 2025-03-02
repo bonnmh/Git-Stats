@@ -10,127 +10,114 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(\.colorScheme) var colorScheme
-    
-    let containerIconSize: CGFloat = 32
+    let circleSize: CGFloat = 30
+    let fontSize: CGFloat = 12
     let iconSize: CGFloat = 12
-    let containerIconColorIndex: Int = 3
-
-    @State var colorTheme: ColorTheme = ColorTheme.currentTheme
-    @AppStorage("shouldRedirectToGitHub") private var shouldRedirectToGithub: Bool = false
-    @AppStorage("notifyOnStatsChange") private var notifyOnStatsChange: Bool = false
+    let circleColorThemeIndex: Int = 3
     
+    @State var colorTheme: ColorTheme = ColorTheme.currentTheme
+    @AppStorage("shouldRedirectToGitHub") private var shouldRedirectToGitHub: Bool = false
+    @AppStorage("notifyOnStatsChange") private var notifyOnStatsChange: Bool = false
+
     var body: some View {
         let linkColor = colorScheme == .dark ? Color.white : Color.black
-        
-        NavigationStack {
+                
+        NavigationView {
             List {
                 Section(header: Text("")) {
-                    NavigationLink {
-                        ThemeSelectionView()
-                    } label: {
+                    NavigationLink(destination: ThemeSelectionView()) {
                         Label {
-                            Text("Theme")
+                            Text(Localization.theme)
                         } icon: {
                             Image(systemName: "paintpalette")
                                 .font(.system(size: iconSize))
                                 .foregroundColor(.white)
                                 .background(
-                                    Circle()
-                                        .fill(colorTheme.colors[containerIconColorIndex]!)
-                                        .frame(width: containerIconSize,height: containerIconSize)
+                                    Circle().fill(colorTheme.colors[circleColorThemeIndex]!)
+                                        .frame(width: circleSize, height: circleSize)
                                 )
                         }
                     }
-
                     
-                    Toggle("Redirect to Github", isOn: $shouldRedirectToGithub)
-                        .onChange(of: shouldRedirectToGithub) { oldValue, newValue in
+                    Toggle(Localization.redirect_to_github, isOn: $shouldRedirectToGitHub)
+                        .onChange(of: shouldRedirectToGitHub) { newValue in
                             UserDefaults.setShouldRedirectToGitHub(newValue)
                         }
-                        .toggleStyle(SwitchToggleStyle(tint: colorTheme.colors[containerIconColorIndex]!))
+                        .toggleStyle(SwitchToggleStyle(tint: colorTheme.colors[circleColorThemeIndex]!))
                     
-                    
-                    Toggle("Notify on stats change", isOn: $notifyOnStatsChange)
-                        .onChange(of: notifyOnStatsChange) { oldValue, newValue in
+                    Toggle(Localization.notify_on_stats_change, isOn: $notifyOnStatsChange)
+                        .onChange(of: notifyOnStatsChange) { newValue in
                             if newValue {
-                                UNUserNotificationCenter.current()
-                                    .requestAuthorization(options: [.alert, .badge, .sound]) { granted, error in
-                                        guard let error = error else { return }
+                                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, error in
+                                    DispatchQueue.main.async {
+                                        guard error != nil else { return }
                                         
                                         if granted {
                                             self.notifyOnStatsChange = true
-                                            UserDefaults.setNotifyOnStatsChange(true)
+                                            UserDefaults.standard.set(true, forKey: "notifyOnStatsChange")
                                         } else {
                                             self.notifyOnStatsChange = false
-                                            UserDefaults.setNotifyOnStatsChange(false)
+                                            UserDefaults.standard.set(false, forKey: "notifyOnStatsChange")
                                         }
                                     }
+                                }
                             } else {
                                 self.notifyOnStatsChange = false
-                                UserDefaults.setNotifyOnStatsChange(false)
+
+                                UserDefaults.standard.set(false, forKey: "notifyOnStatsChange")
                             }
                         }
-                        .toggleStyle(SwitchToggleStyle(tint: colorTheme.colors[containerIconColorIndex]!))
-
+                        .toggleStyle(SwitchToggleStyle(tint: colorTheme.colors[circleColorThemeIndex]!))
+                    
                     
                 }
                 
                 Section(header: Text("About")) {
-//                    Link(destination: URL(string: "https://apps.apple.com/vn/app/sudoku-sync/id6502610308")!) {
-//                        Label {
-//                            Text("Rate App")
-//                                .foregroundColor(linkColor)
-//                        } icon: {
-//                            Image(systemName: "star")
-//                                .font(.system(size: iconSize))
-//                                .foregroundColor(.white)
-//                                .background(
-//                                    Circle()
-//                                        .fill(colorTheme.colors[containerIconColorIndex]!)
-//                                        .frame(width: containerIconSize,height: 30)
-//                                )
-//                        }
-//                    }
-                    
                     
                     let email = "blife.mobile@gmail.com"
-                    let subject = "GitHub Stats Widget Feedback"
+                    let subject = Localization.github_stats_widget_feedback
                     let encodedSubject = subject.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
                     
                     Link(destination: URL(string: "mailto:\(email)?subject=\(encodedSubject)")!) {
                         Label {
-                            Text("Contact")
-                                .foregroundColor(linkColor)
+                            Text(Localization.contact).foregroundColor(linkColor)
                         } icon: {
-                            Image(systemName: "text.bubble")
+                            Image(systemName: "envelope.fill")
                                 .font(.system(size: iconSize))
                                 .foregroundColor(.white)
                                 .background(
-                                    Circle()
-                                        .fill(colorTheme.colors[containerIconColorIndex]!)
-                                        .frame(width: containerIconSize,height: containerIconSize)
+                                    Circle().fill(colorTheme.colors[circleColorThemeIndex]!)
+                                        .frame(width: circleSize, height: circleSize)
                                 )
                         }
                     }
                     
-                    Link(destination: URL(string: "https://github.com/bonnmh/Git-Stats")!) {
+                    Link(destination: URL(string: "https://github.com/mapluisch/GitHub-Stats-Widget-for-iOS")!) {
                         Label {
-                            Text("Github Repo")
-                                .foregroundColor(linkColor)
+                            Text(Localization.github_repo).foregroundColor(linkColor)
                         } icon: {
                             Image(systemName: "backpack")
                                 .font(.system(size: iconSize))
                                 .foregroundColor(.white)
                                 .background(
-                                    Circle()
-                                        .fill(colorTheme.colors[containerIconColorIndex]!)
-                                        .frame(width: containerIconSize,height: containerIconSize)
+                                    Circle().fill(colorTheme.colors[circleColorThemeIndex]!)
+                                        .frame(width: circleSize, height: circleSize)
                                 )
                         }
                     }
                 }
             }
+            .navigationTitle("Settings")
+            .onAppear {
+                self.colorTheme = ColorTheme.currentTheme
+                UNUserNotificationCenter.current().getNotificationSettings { settings in
+                    DispatchQueue.main.async {
+                        self.notifyOnStatsChange = settings.authorizationStatus == .authorized
+                    }
+                }
+            }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  Git Stats
+
+  Created by Brian on 1/3/25.
+  
+*/
+
+"how_to_work" = "Cách sử dụng";
+"navigate_home" = "Đi đến màn hình chính của iPhone nơi bạn muốn thêm tiện ích.";
+"jiggle_mode" = "Nhấn giữ vào màn hình nền cho đến khi các biểu tượng bắt đầu rung lắc.";
+"add_widget" = "Nhấn vào nút '+' ở góc trên bên trái của màn hình.";
+"search_widget" = "Tìm kiếm 'GitHub Stats Widget' trong thư viện tiện ích.";
+"select_widget" = "Nhấn 'Thêm Tiện Ích' sau khi chọn kích thước bạn thích.";
+"place_widget" = "Đặt tiện ích vào màn hình chính, sau đó nhấn 'Xong' ở góc trên bên phải.";
+"edit_widget" = "Để điều chỉnh cài đặt tiện ích, vào chế độ ‘rung lắc’, nhấn vào tiện ích, sau đó chọn ‘Chỉnh sửa Tiện Ích’. Nhập tên người dùng và thay đổi cài đặt theo ý muốn.";
+"edit_theme" = "Để thay đổi chủ đề màu của tiện ích, vào Cài đặt trong ứng dụng này và chọn chủ đề mong muốn.";
+"github_stats_widget_feedback" = "Phản hồi về GitHub Stats Widget";
+"contact" = "Liên hệ";
+"github_repo" = "Kho GitHub";
+"theme" = "Chủ đề";
+"redirect_to_github" = "Chuyển hướng đến GitHub";
+"notify_on_stats_change" = "Thông báo khi có thay đổi số liệu";
+"color_theme" = "Chủ đề màu";
+"customize_colors" = "Tùy chỉnh màu sắc";
+"theme_colors_selection" = "Chọn màu chủ đề";
+"received" = "Đã nhận";
+"sent" = "Đã gửi";
+"github_stats" = "Thống kê GitHub";
+"displays_gitHub_followers_and_stars." = "Hiển thị số lượng người theo dõi và số sao trên GitHub.";
+"displays_weeks_contributions" = "Hiển thị số lượng người theo dõi, số sao và đóng góp trong tuần này.";
+"displays_followers_and_stars." = "Hiển thị số lượng người theo dõi và số sao trên GitHub.";

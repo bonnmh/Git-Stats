@@ -17,7 +17,7 @@ struct ThemeSelectionView: View {
     
     var body: some View {
         List {
-            Section("Color Theme") {
+            Section(Localization.color_theme) {
                 ForEach(ColorTheme.themes, id: \.name) { theme in
                     HStack {
                         Text(theme.name)
@@ -45,7 +45,7 @@ struct ThemeSelectionView: View {
                 }
             }
             
-            Section("Customize Colors") {
+            Section(Localization.customize_colors) {
                 ForEach(0..<5, id: \.self) { count in
                     HStack {
                         Text("\(contributionCountToString(count: count)) contributions")
@@ -55,7 +55,7 @@ struct ThemeSelectionView: View {
                 }
             }
         }
-        .navigationTitle("Theme Colors Selection")
+        .navigationTitle(Localization.theme_colors_selection)
     }
     
     private func contributionCountToString(count: Int) -> String {

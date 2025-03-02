@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
- 
 
 struct ContributionsView: View {
     let contributions: [Contribution]

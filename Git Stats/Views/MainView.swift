@@ -12,16 +12,16 @@ struct Mainview: View {
     
     var body: some View {
         TabView {
-            Tab("Received", systemImage: "book.pages.fill") {
+            Tab(Localization.received, systemImage: "book.pages.fill") {
                 HomeView()
             }
-            Tab("Sent", systemImage: "gear") {
+            Tab(Localization.sent, systemImage: "gear") {
                 SettingsView()
             }
         }
         .onOpenURL { url in
             if shouldRedirectToGitHub,
-               url.scheme == "gitstatswidget",
+               url.scheme == "githubstatswidget",
                let username = url.pathComponents.last {
                 let userURL = URL(string: "https://github.com/\(username)")!
                 UIApplication.shared.open(userURL)

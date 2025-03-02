@@ -14,7 +14,7 @@ struct LargeWidgetView: View {
     var body: some View {
         let linkColor = colorScheme == .dark ? Color.white : Color.black
 
-        Link(destination: URL(string: "gitstatswidget://user/\(entry.configuration.username ?? "bonnmh")")!) {
+        Link(destination: URL(string: "githubstatswidget://user/\(entry.configuration.username ?? "bonnmh")")!) {
             VStack(alignment: .center, spacing: 16) {
                 UserInfoView(username: entry.configuration.username ?? "bonnmh", showUsername: entry.configuration.showUserName as? Bool ?? true, useProfilePicture: false, colorScheme: colorScheme, imageData: entry.avatarImageData)
                 

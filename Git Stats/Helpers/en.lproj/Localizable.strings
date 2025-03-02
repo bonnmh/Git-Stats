@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  Git Stats
+
+  Created by Brian on 1/3/25.
+  
+*/
+
+"how_to_work" = "How to work";
+"navigate_home" = "Navigate to your iPhone's home screen where you want to add the widget.";
+"jiggle_mode" = "Long press on the background until the icons start jiggling.";
+"add_widget" = "Tap the '+' button in the upper-left corner of the screen.";
+"search_widget" = "Search for 'GitHub Stats Widget' in the widget gallery.";
+"select_widget" = "Tap 'Add Widget' after selecting the size you prefer.";
+"place_widget" = "Position the widget on your home screen, then press 'Done' in the upper-right corner.";
+"edit_widget" = "To adjust widget settings, enter ‘jiggle mode’, tap the widget, then select ‘Edit Widget’. Enter your username and change the settings to your liking.";
+"edit_theme" = "To change the widget's color theme, navigate to Settings in this app and select your desired theme.";
+"github_stats_widget_feedback" = "GitHub Stats Widget Feedback";
+"contact" = "Contact";
+"github_repo" = "Github Repo";
+"theme" = "Theme";
+"redirect_to_github" = "Redirect to Github";
+"notify_on_stats_change" = "Notify on stats change";
+"github_stats_widget_feedback" = "GitHub Stats Widget Feedback";
+"color_theme" = "Color Theme";
+"customize_colors" = "Customize Colors";
+"theme_colors_selection" = "Theme Colors Selection";
+"received" = "Received";
+"sent" = "Sent";
+"github_stats" = "GitHub Stats";
+"displays_gitHub_followers_and_stars." = "Displays GitHub followers and stars.";
+"displays_weeks_contributions" = "Displays GitHub followers and stars with this weeks contributions";
+"displays_followers_and_stars." = "Displays GitHub followers and stars.";
