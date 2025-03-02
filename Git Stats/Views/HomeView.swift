@@ -10,21 +10,25 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        NavigationStack {
-            List {
-                Section(header: Text("")){
-                    ForEach(HowToStep.allCases) { step in
-                        HStack(alignment: .top){
-                            Text("\(step.id + 1)")
-                                .bold()
-                            Text(step.description)
-                                .padding(.leading, 2)
+        if #available(iOS 16.0, *) {
+            NavigationStack {
+                List {
+                    Section(header: Text("")){
+                        ForEach(HowToStep.allCases) { step in
+                            HStack(alignment: .top){
+                                Text("\(step.id + 1)")
+                                    .bold()
+                                Text(step.description)
+                                    .padding(.leading, 2)
+                            }
                         }
                     }
                 }
+                .navigationTitle(Localization.how_to_work)
+                .listStyle(InsetListStyle())
             }
-            .navigationTitle("How to work")
-            .listStyle(InsetListStyle())
+        } else {
+            // Fallback on earlier versions
         }
     }
 }
@@ -50,21 +54,21 @@ enum HowToStep: Int, CaseIterable, Identifiable {
     var description: String {
         switch self {
         case .navigateHome:
-            return "Navigate to your iPhone's home screen where you want to add the widget."
+            return Localization.navigate_home
         case .jiggleMode:
-            return "Long press on the background until the icons start jiggling."
+            return Localization.jiggle_mode
         case .addWidget:
-            return "Tap the '+' button in the upper-left corner of the screen."
+            return Localization.add_widget
         case .searchWidget:
-            return "Search for 'GitHub Stats Widget' in the widget gallery."
+            return Localization.search_widget
         case .selectWidget:
-            return "Tap 'Add Widget' after selecting the size you prefer."
+            return Localization.select_widget
         case .placeWidget:
-            return "Position the widget on your home screen, then press 'Done' in the upper-right corner."
+            return Localization.place_widget
         case .editWidget:
-            return "To adjust widget settings, enter ‘jiggle mode’, tap the widget, then select ‘Edit Widget’. Enter your username and change the settings to your liking."
+            return Localization.edit_widget
         case .editTheme:
-            return "To change the widget's color theme, navigate to Settings in this app and select your desired theme."
+            return Localization.edit_theme
        }
     }
 }

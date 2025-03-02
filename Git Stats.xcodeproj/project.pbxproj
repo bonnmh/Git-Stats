@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D319E2632D74463A00CB9DD2 /* GitStatsConfigurationIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D319E2622D74463A00CB9DD2 /* GitStatsConfigurationIntent.intentdefinition */; };
+		D319E2642D74463A00CB9DD2 /* GitStatsConfigurationIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D319E2622D74463A00CB9DD2 /* GitStatsConfigurationIntent.intentdefinition */; };
 		D36CB29F2D6EFD6A00A29F95 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36CB29E2D6EFD6A00A29F95 /* WidgetKit.framework */; };
 		D36CB2A12D6EFD6A00A29F95 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D36CB2A02D6EFD6A00A29F95 /* SwiftUI.framework */; };
 		D36CB2AE2D6EFD6B00A29F95 /* WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D36CB29C2D6EFD6A00A29F95 /* WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -19,8 +21,6 @@
 		D36CB2CF2D6EFDAE00A29F95 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C42D6EFDAE00A29F95 /* SettingsView.swift */; };
 		D36CB2D02D6EFDAE00A29F95 /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C52D6EFDAE00A29F95 /* ThemeSelectionView.swift */; };
 		D36CB2D22D6EFDAE00A29F95 /* Git_StatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C92D6EFDAE00A29F95 /* Git_StatsApp.swift */; };
-		D36CB2D72D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2D62D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition */; };
-		D36CB2D82D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2D62D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition */; };
 		D36CB2DB2D6F053F00A29F95 /* GitStatsTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2DA2D6F053700A29F95 /* GitStatsTimelineProvider.swift */; };
 		D36CB2DD2D6F059A00A29F95 /* GitStatsUserEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2DC2D6F057B00A29F95 /* GitStatsUserEntry.swift */; };
 		D36CB2E12D6F062B00A29F95 /* ContributionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2E02D6F062300A29F95 /* ContributionFetcher.swift */; };
@@ -52,6 +52,9 @@
 		D3ECCEB92D706784007524FB /* RectangularWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEB82D70677B007524FB /* RectangularWidgetView.swift */; };
 		D3ECCEBC2D707907007524FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3ECCEBB2D707907007524FB /* Assets.xcassets */; };
 		D3ECCEBD2D716FE2007524FB /* ThemeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36CB2C52D6EFDAE00A29F95 /* ThemeSelectionView.swift */; };
+		D3ECCEC02D731737007524FB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3ECCEBE2D731737007524FB /* Localizable.strings */; };
+		D3ECCEC72D731837007524FB /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEC62D73182C007524FB /* Localization.swift */; };
+		D3ECCEC82D74370B007524FB /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3ECCEC62D73182C007524FB /* Localization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D319E2612D74463A00CB9DD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = en; path = en.lproj/GitStatsConfigurationIntent.intentdefinition; sourceTree = "<group>"; };
+		D319E2662D74463E00CB9DD2 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/GitStatsConfigurationIntent.strings; sourceTree = "<group>"; };
 		D36CB2762D6EEFF900A29F95 /* Git Stats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git Stats.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36CB29C2D6EFD6A00A29F95 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36CB29E2D6EFD6A00A29F95 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -95,7 +100,6 @@
 		D36CB2C92D6EFDAE00A29F95 /* Git_StatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git_StatsApp.swift; sourceTree = "<group>"; };
 		D36CB2D32D6EFDE000A29F95 /* WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetExtension.entitlements; sourceTree = "<group>"; };
 		D36CB2D42D6EFE2D00A29F95 /* Git Stats.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Git Stats.entitlements"; sourceTree = "<group>"; };
-		D36CB2D62D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = GitStatsConfigurationIntent.intentdefinition; sourceTree = "<group>"; };
 		D36CB2D92D6F007300A29F95 /* Git-Stats-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Git-Stats-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D36CB2DA2D6F053700A29F95 /* GitStatsTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStatsTimelineProvider.swift; sourceTree = "<group>"; };
 		D36CB2DC2D6F057B00A29F95 /* GitStatsUserEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStatsUserEntry.swift; sourceTree = "<group>"; };
@@ -120,6 +124,9 @@
 		D3ECCEB62D706705007524FB /* GitStatsLockscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitStatsLockscreenView.swift; sourceTree = "<group>"; };
 		D3ECCEB82D70677B007524FB /* RectangularWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularWidgetView.swift; sourceTree = "<group>"; };
 		D3ECCEBB2D707907007524FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3ECCEBF2D731737007524FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3ECCEC42D731765007524FB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D3ECCEC62D73182C007524FB /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +198,7 @@
 		D36CB2BF2D6EFDAE00A29F95 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D3ECCEBE2D731737007524FB /* Localizable.strings */,
 				D36CB2E82D6F08F200A29F95 /* GithubAPIManager.swift */,
 				D36CB2DA2D6F053700A29F95 /* GitStatsTimelineProvider.swift */,
 				D36CB2DC2D6F057B00A29F95 /* GitStatsUserEntry.swift */,
@@ -224,8 +232,9 @@
 				D36CB2D92D6F007300A29F95 /* Git-Stats-Info.plist */,
 				D36CB2D42D6EFE2D00A29F95 /* Git Stats.entitlements */,
 				D36CB2C72D6EFDAE00A29F95 /* Assets.xcassets */,
+				D3ECCEC62D73182C007524FB /* Localization.swift */,
 				D36CB2C92D6EFDAE00A29F95 /* Git_StatsApp.swift */,
-				D36CB2D62D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition */,
+				D319E2622D74463A00CB9DD2 /* GitStatsConfigurationIntent.intentdefinition */,
 				D36CB2BF2D6EFDAE00A29F95 /* Helpers */,
 				D36CB2C12D6EFDAE00A29F95 /* Preview Content */,
 				D36CB2C62D6EFDAE00A29F95 /* Views */,
@@ -336,6 +345,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = D36CB26D2D6EEFF900A29F95;
 			minimizedProjectReferenceProxies = 1;
@@ -356,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D36CB2CB2D6EFDAE00A29F95 /* Preview Assets.xcassets in Resources */,
+				D3ECCEC02D731737007524FB /* Localizable.strings in Resources */,
 				D36CB2CC2D6EFDAE00A29F95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,9 +392,10 @@
 				D36CB2CF2D6EFDAE00A29F95 /* SettingsView.swift in Sources */,
 				D36CB2E72D6F07F500A29F95 /* NotificationManager.swift in Sources */,
 				D36CB32F2D6F7A2900A29F95 /* ColorTheme.swift in Sources */,
+				D3ECCEC72D731837007524FB /* Localization.swift in Sources */,
 				D36CB2D02D6EFDAE00A29F95 /* ThemeSelectionView.swift in Sources */,
 				D36CB2E22D6F064400A29F95 /* ContributionFetcher.swift in Sources */,
-				D36CB2D72D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition in Sources */,
+				D319E2632D74463A00CB9DD2 /* GitStatsConfigurationIntent.intentdefinition in Sources */,
 				D36CB2DD2D6F059A00A29F95 /* GitStatsUserEntry.swift in Sources */,
 				D36CB2E92D6F08FA00A29F95 /* GithubAPIManager.swift in Sources */,
 				D36CB2E52D6F074000A29F95 /* WidgetViewHelpers.swift in Sources */,
@@ -408,7 +420,7 @@
 				D3ECCEB32D706083007524FB /* GitStatsContributionsView.swift in Sources */,
 				D36CB31F2D6F610A00A29F95 /* UserInfoView.swift in Sources */,
 				D3ECCEAF2D7057EE007524FB /* LargeWidgetView.swift in Sources */,
-				D36CB2D82D6EFFCE00A29F95 /* GitStatsConfigurationIntent.intentdefinition in Sources */,
+				D319E2642D74463A00CB9DD2 /* GitStatsConfigurationIntent.intentdefinition in Sources */,
 				D36CB32B2D6F732200A29F95 /* MediumWidgetView.swift in Sources */,
 				D3ECCEB72D706706007524FB /* GitStatsLockscreenView.swift in Sources */,
 				D36CB2BC2D6EFD9400A29F95 /* WidgetExtensionBundle.swift in Sources */,
@@ -418,6 +430,7 @@
 				D36CB2E12D6F062B00A29F95 /* ContributionFetcher.swift in Sources */,
 				D36CB3192D6F5C7C00A29F95 /* GitStatsWidgetView.swift in Sources */,
 				D36CB3212D6F61C700A29F95 /* UserAvatarView.swift in Sources */,
+				D3ECCEC82D74370B007524FB /* Localization.swift in Sources */,
 				D3ECCEBD2D716FE2007524FB /* ThemeSelectionView.swift in Sources */,
 				D36CB3252D6F6D6300A29F95 /* CountTextView.swift in Sources */,
 				D3ECCEB52D70630B007524FB /* SmallWidgetWithContributionsView.swift in Sources */,
@@ -434,12 +447,34 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		D319E2622D74463A00CB9DD2 /* GitStatsConfigurationIntent.intentdefinition */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D319E2612D74463A00CB9DD2 /* en */,
+				D319E2662D74463E00CB9DD2 /* vi */,
+			);
+			name = GitStatsConfigurationIntent.intentdefinition;
+			sourceTree = "<group>";
+		};
+		D3ECCEBE2D731737007524FB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3ECCEBF2D731737007524FB /* en */,
+				D3ECCEC42D731765007524FB /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		D36CB2822D6EEFFA00A29F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -503,6 +538,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -559,29 +595,38 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Git Stats/Git Stats.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"Git Stats/Preview Content\"";
-				DEVELOPMENT_TEAM = 4A28NG66QV;
+				DEVELOPMENT_TEAM = 3MMU9QQVD9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Git-Stats-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Your Git Stats";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.blife.gitstats;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blife.githubstats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -590,29 +635,38 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "Git Stats/Git Stats.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"Git Stats/Preview Content\"";
-				DEVELOPMENT_TEAM = 4A28NG66QV;
+				DEVELOPMENT_TEAM = 3MMU9QQVD9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Git-Stats-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Your Git Stats";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.blife.gitstats;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blife.githubstats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -623,24 +677,27 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4A28NG66QV;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 3MMU9QQVD9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = YourGithubStatsExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.blife.gitstats.WidgetExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blife.githubstats.WidgetExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -651,24 +708,27 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = WidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4A28NG66QV;
+				CURRENT_PROJECT_VERSION = 7;
+				DEVELOPMENT_TEAM = 3MMU9QQVD9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = WidgetExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = YourGithubStatsExtension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.blife.gitstats.WidgetExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blife.githubstats.WidgetExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

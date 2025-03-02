@@ -14,7 +14,7 @@ struct SmallWidgetWithContributionsView: View {
     
     var body: some View {
 
-        Link(destination: URL(string: "gitstatswidget://user/\(entry.configuration.username ?? "bonnmh")")!) {
+        Link(destination: URL(string: "githubstatswidget://user/\(entry.configuration.username ?? "bonnmh")")!) {
             VStack(alignment: .center, spacing: 0) {
                 UserInfoView(username: entry.configuration.username ?? "bonnmh", showUsername: entry.configuration.showUserName as? Bool ?? true, useProfilePicture: entry.configuration.useProfilePicture as? Bool ?? true, colorScheme: colorScheme, imageData: entry.avatarImageData,  miniatureImage: true)
                 Spacer()
